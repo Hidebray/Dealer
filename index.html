@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dealers</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!--HEADER-->
+    <header class="header">
+        <div class="container w-[70%] grid grid-rows-[1fr_2fr] gap-5 md:grid-cols-[5fr_1fr_6fr] md:grid-rows-1 md:gap-0">
+            <div>
+                <h1 class="logo text-[30px] sm:text-[30px] md:text-[50px] lg:text-[80px]">Dealers</h1>
+                <nav class="menu">
+                    <ul
+                        class="flex justify-between md:flex-col [@media(min-width:1111px)]:flex-row  text-[10px] sm:text-xs md:text-sm lg:text-base">
+                        <li><a href="#">Home</a></li>
+                        <li class="inline md:hidden [@media(min-width:1111px)]:inline">⋮</li>
+                        <li><a href="#">About</a></li>
+                        <li class="inline md:hidden [@media(min-width:1111px)]:inline">⋮</li>
+                        <li><a href="#">All Deals</a></li>
+                        <li class="inline md:hidden [@media(min-width:1111px)]:inline">⋮</li>
+                        <li><a href="#">Submit Your Deal</a></li>
+                        <li class="inline md:hidden [@media(min-width:1111px)]:inline">⋮</li>
+                        <li class="email-icon"><a href="#">✉</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!--SIGN UP MAILBOX-->
+            <div class="sign-up-mailbox flex flex-col justify-between md:col-start-3">
+                <h3 class="text-xs sm:text-sm md:text-base lg:text-lg">Sign up for free to get deals directly to your
+                    mailbox</h3>
+                <form action="#" class="flex gap-5 md:flex-row text-[10px] sm:text-xs md:text-sm lg:text-base">
+                    <input type="email" name="email" placeholder="Enter Your E-mail Address" required class="flex-[1]">
+                    <button type="button">Subscribe Me</button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <!--MAIN-->
+    <main class="main-content">
+        <div class="container w-[70%]">
+
+            <!--FEATURED DEAL-->
+            <section class="featured-deal flex flex-col lg:flex-row gap-16">
+                <div class="description flex-[2]">
+                    <h1 class="text-base sm:text-lg md:text-xl lg:text-2xl font-bold">This is one very amazing deal</h1>
+                    <div class="deal-image"></div>
+                    <p class="text-xs sm:text-xs md:text-sm lg:text-base">Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+
+                <div class="detail-info flex-[1] text-xs sm:text-sm md:text-base lg:text-lg">
+                    <div class="information-table">
+                        <p class="label">This deal will end in:</p>
+                        <p class="time">6 days 1 hrs 52 min 51 sec</p>
+                        <div class="discount">
+                            <p class="discount-key">Discount</p>
+                            <div class="discount-value text-3xl sm:text-4xl md:text-5xl lg:text-6xl">43%</div>
+                        </div>
+                        <div class="deal-stats flex">
+                            <div class="stat flex-[1]">
+                                <p class="key">Deal Value</p>
+                                <p class="value">$47</p>
+                            </div>
+                            <div class="stat flex-[1]">
+                                <p class="key">You Save</p>
+                                <p class="value">$20</p>
+                            </div>
+                        </div>
+                        <div class="social-buttons flex justify-around">
+                            <button class="social-btn">🐦 Tweet | 9</button>
+                            <button class="social-btn">👍 Like | 5</button>
+                        </div>
+                    </div>
+                    <button class="buy-button text-sm sm:text-lg md:text-xl lg:text-[26px]">Buy this deal -
+                        27$</button>
+                </div>
+            </section>
+
+            <!--CLIENTS LOGO-->
+            <section
+                class="clients-logo flex flex-nowrap justify-between overflow-x-auto gap-8 whitespace-nowrap text-xs sm:text-base md:text-xl lg:text-2xl p-4">
+                <div class="logo-1 flex-shrink-0">Dealers</div>
+                <div class="logo-2 flex-shrink-0">THEMES KINGDOM</div>
+                <div class="logo-3 flex-shrink-0">DovesMediac</div>
+                <div class="logo-2 flex-shrink-0">THEMES KINGDOM</div>
+                <div class="logo-1 flex-shrink-0">&m</div>
+            </section>
+
+            <!--DEALS LIST-->
+            <section class="deals-list flex overflow-x-auto gap-10 hidescrollbar">
+                <div class="deal-card flex-shrink-0 w-[250px] lg:flex-[1]">
+                    <h3 class="text-xs sm:text-sm md:text-base lg:text-lg">Lorem Ipsum Dolor Deal</h3>
+                    <div class="image-info">
+                        <div class="deal-card-image"></div>
+                        <div
+                            class="deal-card-stats flex justify-between flex-col md:flex-row text-xs sm:text-xs md:text-sm lg:text-base">
+                            <div class="stat flex flex-row justify-between md:flex-col items-center">
+                                <p class="key">Deal Value </p>
+                                <p class="value">$47</p>
+                            </div>
+                            <div class="stat flex flex-row justify-between md:flex-col items-center">
+                                <p class="key">Discount </p>
+                                <p class="value">43%</p>
+                            </div>
+                            <div class="stat flex flex-row justify-between md:flex-col items-center">
+                                <p class="key">You Save </p>
+                                <p class="value">$20</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="deal-card-more flex justify-between">
+                        <p class="time text-[8px] lg:text-[10px]">71 days 23 hrs 38 min36 sec</p>
+                        <button class="see-deal-button text-[8px] sm:text-[8px] md:text-[10px] lg:text-[12px]">SEE
+                            DEAL</button>
+                    </div>
+                </div>
+                <div class="deal-card flex-shrink-0 w-[250px] lg:flex-[1]">
+                    <h3 class="text-xs sm:text-sm md:text-base lg:text-lg">Lorem Ipsum Dolor Deal</h3>
+                    <div class="image-info">
+                        <div class="deal-card-image"></div>
+                        <div
+                            class="deal-card-stats flex justify-between flex-col md:flex-row text-xs sm:text-xs md:text-sm lg:text-base">
+                            <div class="stat flex flex-row justify-between md:flex-col items-center">
+                                <p class="key">Deal Value </p>
+                                <p class="value">$47</p>
+                            </div>
+                            <div class="stat flex flex-row justify-between md:flex-col items-center">
+                                <p class="key">Discount </p>
+                                <p class="value">43%</p>
+                            </div>
+                            <div class="stat flex flex-row justify-between md:flex-col items-center">
+                                <p class="key">You Save </p>
+                                <p class="value">$20</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="deal-card-more flex justify-between">
+                        <p class="time text-[8px] lg:text-[10px]">71 days 23 hrs 38 min36 sec</p>
+                        <button class="see-deal-button text-[8px] sm:text-[8px] md:text-[10px] lg:text-[12px]">SEE
+                            DEAL</button>
+                    </div>
+                </div>
+                <div class="deal-card flex-shrink-0 w-[250px] lg:flex-[1]">
+                    <h3 class="text-xs sm:text-sm md:text-base lg:text-lg">Lorem Ipsum Dolor Deal</h3>
+                    <div class="image-info">
+                        <div class="deal-card-image"></div>
+                        <div
+                            class="deal-card-stats flex justify-between flex-col md:flex-row text-xs sm:text-xs md:text-sm lg:text-base">
+                            <div class="stat flex flex-row justify-between md:flex-col items-center">
+                                <p class="key">Deal Value </p>
+                                <p class="value">$47</p>
+                            </div>
+                            <div class="stat flex flex-row justify-between md:flex-col items-center">
+                                <p class="key">Discount </p>
+                                <p class="value">43%</p>
+                            </div>
+                            <div class="stat flex flex-row justify-between md:flex-col items-center">
+                                <p class="key">You Save </p>
+                                <p class="value">$20</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="deal-card-more flex justify-between">
+                        <p class="time text-[8px] lg:text-[10px]">71 days 23 hrs 38 min36 sec</p>
+                        <button class="see-deal-button text-[8px] sm:text-[8px] md:text-[10px] lg:text-[12px]">SEE
+                            DEAL</button>
+                    </div>
+                </div>
+            </section>
+
+            <!--FOOTER SECTION-->
+            <section class="footer-section flex justify-between flex-col lg:flex-row gap-5">
+                <div class="section-info flex-[1]">
+                    <h3 class="text-xs sm:text-sm md:text-base lg:text-lg">About Our Deals</h3>
+                    <p class="text-xs sm:text-xs md:text-sm lg:text-base">Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+                    <p class="text-xs sm:text-xs md:text-sm lg:text-base">Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+                </div>
+                <div class="line-dashed"></div>
+                <div class="section-info flex-[1]">
+                    <h3 class="text-xs sm:text-sm md:text-base lg:text-lg">Twitter Buzz</h3>
+                    <p class="text-xs sm:text-xs md:text-sm lg:text-base">7 Photoshop tips for designing clean and
+                        modern
+                        websites <a href="#">su.pr/1ruOpp</a></p>
+                    <div class="time inline-block sm:text-xs md:text-sm lg:text-base">1Day Ago</div>
+                    <p class="text-xs sm:text-xs md:text-sm lg:text-base">7 Photoshop tips for designing clean and
+                        modern
+                        websites <a href="#">su.pr/1ruOpp</a></p>
+                    <div class="time inline-block sm:text-xs md:text-sm lg:text-base">1Day Ago</div>
+                </div>
+                <div class="line-dashed"></div>
+                <div class="section-info flex-[1]">
+                    <h3 class="text-xs sm:text-sm md:text-base lg:text-lg">Other Pages</h3>
+                    <ul class="text-xs sm:text-xs md:text-sm lg:text-base">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Our Deals</a></li>
+                        <li><a href="#">All Deals</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!--FOOTER-->
+    <footer class="footer">
+        <div class="container w-[70%] flex flex-col items-center text-xs sm:text-sm md:text-base lg:text-lg">
+            <p>Copyright Information Goes Here 2012. All Rights Reserved.</p>
+            <p>Designed by <a href="#">Themes Kingdom</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>
